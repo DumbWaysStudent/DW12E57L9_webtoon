@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity 
 } from 'react-native';
+//import Icon from 'react-native-vector-icons';
 
 
 export default class Form extends Component{
@@ -115,29 +116,29 @@ const styles = StyleSheet.create({
     marginVertical: 10
   },
   button: {
-    width:0,
-    backgroundColor:'#1c313a',
-     borderRadius: 0,
-      marginVertical: 0,
-      paddingVertical: 0
-  },
-  button1: {
     width:300,
     backgroundColor:'#1c313a',
      borderRadius: 25,
       marginVertical: 10,
       paddingVertical: 13
   },
+  button1: {
+    width:300,
+    backgroundColor:'white',
+     borderRadius: 25,
+      marginVertical: 10,
+      paddingVertical: 13
+  },
   buttonText: {
-    fontSize:16,
+   fontSize:16,
     fontWeight:'500',
-    color:'#1c313a',
+    color:'white',
     textAlign:'center'
   },
   buttonText1: {
     fontSize:16,
     fontWeight:'500',
-    color:'#ffffff',
+    color:'#1c313a',
     textAlign:'center'
   }
 });
