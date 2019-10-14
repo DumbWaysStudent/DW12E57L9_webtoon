@@ -17,7 +17,25 @@ const BottomTabNavigator = createBottomTabNavigator({
         )
       }
     },
- {
+ Favorite: {
+        screen: FavoriteStack,
+        navigationOptions:{
+          tabBarLabel: 'Favorite',
+          tabBarIcon: ({ tintColor }) => (
+            <Icon type="FontAwesome" name="star" color={tintColor}/>
+          )
+        }
+    },
+    Profile: {
+        screen: ProfileStack,
+        navigationOptions:{
+          tabBarLabel: 'Profile',
+          tabBarIcon: ({ tintColor }) => (
+            <Icon type="FontAwesome" name="user" color={tintColor}/>
+          )
+        }
+    }
+}, {
     tabBarOptions: {
       activeTintColor: '#FFDEAD',
       inactiveTintColor:'white',
