@@ -2,7 +2,7 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 import Login from './../screens/Login'
-//import Detail from './../screens/Detail'
+import Detail from './../screens/Detail'
 //import DetailEpisode from './../screens/DetailEpisode';
 
 //import MyCreation from './../screens/MyCreation';
@@ -18,7 +18,24 @@ const HeaderNav = createStackNavigator({
           header: null
       }),
     },
-   
+    Detail: {
+      screen: Detail,
+      navigationOptions: ({ navigation }) => ({
+        header:null
+      }),
+    },
+    DetailEpisode: {
+      screen: DetailEpisode,
+      navigationOptions: ({ navigation }) => ({
+        header:null
+      }),
+    },
+    MyCreation: {
+      screen: MyCreation,
+      navigationOptions: ({ navigation }) => ({
+        header:null
+      }),
+    },   
 
   });
 
