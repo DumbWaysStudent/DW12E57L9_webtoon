@@ -5,9 +5,9 @@ import Login from './../screens/Login'
 import Detail from './../screens/Detail'
 import DetailEpisode from './../screens/DetailEpisode';
 import MyCreation from './../screens/MyCreation';
-//import CreateWebtoon from './../screens/CreateWebtoon';
+import CreateWebtoon from './../screens/CreateWebtoon';
 import CreateEpisode from './../screens/CreateEpisode';
-//import EditWebtoon from './../screens/EditWebtoon';
+import EditWebtoon from './../screens/EditWebtoon';
 
 // without Bottom Tab Navigator
 const HeaderNav = createStackNavigator({
@@ -45,6 +45,12 @@ Detail: {
     }, 
      CreateEpisode: {
       screen: CreateEpisode,
+      navigationOptions: ({ navigation }) => ({
+        header:null
+      }),
+    }, 
+  EditWebtoon: {
+      screen: EditWebtoon,
       navigationOptions: ({ navigation }) => ({
         header:null
       }),
