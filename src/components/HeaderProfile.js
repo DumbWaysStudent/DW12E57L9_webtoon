@@ -1,7 +1,7 @@
-//import { StyleSheet, Dimensions, Text, Share, Image, View,  } from 'react-native';
+import { StyleSheet, Dimensions, Text, Share, Image, View,  } from 'react-native';
 import React, { Component } from 'react';
-import { Header, Left, Body, Right, 
-    Button, Icon, Title } from 'native-base';
+import { Container, Header, Left, Body, Right, 
+    Button, Icon, Input, Title, Content, Card, Thumbnail, Textarea } from 'native-base';
 
 
 export default class HeaderProfile extends Component {

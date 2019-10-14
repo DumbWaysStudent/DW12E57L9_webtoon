@@ -1,6 +1,7 @@
-import { StyleSheet, Dimensions, Text} from 'react-native';
+import { StyleSheet, Dimensions, Text, Share, Image, View, FlatList, SafeAreaView } from 'react-native';
 import React, { Component } from 'react';
-import { Thumbnail } from 'native-base';
+import { Container, Header, Left, Body, Right, 
+  Button, Icon, Title, Content, List, ListItem, Thumbnail } from 'native-base';
   
 import {account} from './../data/dummy'
 
