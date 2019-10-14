@@ -4,8 +4,8 @@ import { createBottomTabNavigator }  from 'react-navigation-tabs';
 import {Icon} from 'native-base';
 
 import ForYouStack from '../screen/main/sign/Home'
-import FavoriteStack from '../screen/main/sign/Favorite'
-import ProfileStack from '../screen/main/sign/Profile'
+//import FavoriteStack from '../screen/main/sign/Favorite'
+//import ProfileStack from '../screen/main/sign/Profile'
 
 const BottomTabNavigator = createBottomTabNavigator({
     Home: {
@@ -17,25 +17,7 @@ const BottomTabNavigator = createBottomTabNavigator({
         )
       }
     },
-    Favorite: {
-        screen: FavoriteStack,
-        navigationOptions:{
-          tabBarLabel: 'Favorite',
-          tabBarIcon: ({ tintColor }) => (
-            <Icon type="FontAwesome" name="star" color={tintColor}/>
-          )
-        }
-    },
-    Profile: {
-        screen: ProfileStack,
-        navigationOptions:{
-          tabBarLabel: 'Profile',
-          tabBarIcon: ({ tintColor }) => (
-            <Icon type="FontAwesome" name="user" color={tintColor}/>
-          )
-        }
-    }
-}, {
+ {
     tabBarOptions: {
       activeTintColor: '#FFDEAD',
       inactiveTintColor:'white',
